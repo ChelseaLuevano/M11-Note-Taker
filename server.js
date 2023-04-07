@@ -7,6 +7,10 @@ const app = express();
 // PORT variable
 const PORT = 3001;
 
+// Middleware for parsing JSON and urlencoded form data
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 // Function for app port
 app.listen(PORT, () => {
 // determine what code to in this
