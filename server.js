@@ -32,11 +32,10 @@ app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 
-// GET Route for note page
-app.get('/', (req, res) =>
-  res.sendFile(path.join(__dirname, '/public/notes.html'))
-);
-
+// GET Route for note page --> WHAT is the route link?
+app.get('/', (req, res) => {
+ return res.sendFile(path.join(__dirname, '/public/notes.html'))
+});
 
 // Wildcard route to direct users to a 404 page
 app.get('*', (req, res) =>
