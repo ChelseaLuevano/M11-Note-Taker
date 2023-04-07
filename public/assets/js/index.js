@@ -9,7 +9,7 @@ const app = express();
 app.use('/db', dbRouter);
 
 // GET Route for retrieving all the notes
-dbRouter.get('/', (req, res) => {
+dbRouter.get('/notes', (req, res) => {
   return readFromFile('./db.json').then((data) => res.json(JSON.parse(data)));
   
   // Sending all notes to the client

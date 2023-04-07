@@ -25,15 +25,13 @@ app.listen(PORT, () => {
    return console.log(`App listening at http://localhost:${PORT} 🚀`)
 })
 
-// define routes for appliction with path & callback function 
-
 // GET Route for homepage
 app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 
 // GET Route for note page --> WHAT is the route link?
-app.get('/', (req, res) => {
+app.get('/notes', (req, res) => {
  return res.sendFile(path.join(__dirname, '/public/notes.html'))
 });
 
