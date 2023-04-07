@@ -1,4 +1,4 @@
-// import express
+// Import express
 const express = require('express');
 
 // Initialize an app object/instance of express
@@ -22,10 +22,8 @@ app.use(express.static('public'));
 
 // Function for app port
 app.listen(PORT, () => {
-// determine what code to in this
-
+   return console.log(`App listening at http://localhost:${PORT} 🚀`)
 })
-
 
 // define routes for appliction with path & callback function 
 

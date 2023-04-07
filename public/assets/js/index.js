@@ -1,3 +1,18 @@
+// Import Express
+const express = require('express');
+
+// Import our modular routers for notes
+const dbRouter = require('./db')
+
+const app = express();
+
+app.use('/db', dbRouter);
+
+// GET Route for retrieving all the notes
+dbRouter.get('/', (req, res) =>
+  readFromFile('./db.json').then((data) => res.json(JSON.parse(data)))
+);
+
 let noteTitle;
 let noteText;
 let saveNoteBtn;
@@ -181,3 +196,6 @@ if (window.location.pathname === '/notes') {
 }
 
 getAndRenderNotes();
+
+// Export app
+module.exports = app;
