@@ -1,6 +1,9 @@
 // Import Express
 const express = require('express');
 
+// Import helpers fsUtils
+const { readAndAppend, readFromFile } = require('../helpers/fsUtils');
+
 // Import our modular routers for notes
 const dbRouter = require('./db')
 
