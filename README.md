@@ -23,4 +23,4 @@ This web application gives the user the ability to enter, save and display notes
     ISC https://opensource.org/licenses/ISC
 
     ## Questions
-    If you have any questions about my Github Project, please send an email to chelsea.m.lueavno@gmail.com .
+    If you have any questions about my Github Project, please send an email to chelsea.m.luevano@gmail.com .
