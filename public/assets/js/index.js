@@ -1,24 +1,3 @@
-// // Import Express
-// const express = require('express');
-
-// // Import helpers fsUtils
-// const { readAndAppend, readFromFile } = require('../helpers/fsUtils');
-
-// // Import our modular routers for notes
-// const dbRouter = require('./db')
-
-// const app = express();
-
-// app.use('/db', dbRouter);
-
-// // GET Route for retrieving all the notes
-// dbRouter.get('/notes', (req, res) => {
-//   return readFromFile('./db.json').then((data) => res.json(JSON.parse(data)));
-  
-//   // Sending all notes to the client
-//    res.status(200).json(reviews);
- 
-// });
 
 let noteTitle;
 let noteText;
